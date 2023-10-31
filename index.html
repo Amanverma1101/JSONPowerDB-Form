@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Micro Project Work</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="https://use.fontawesome.com/4ecc3dbb0b.js"></script>
+  </head>
+  <body>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="title_container">
+                <h2>Student Enrollment Form</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="">
+                    <form  id="stuForm" method="post">
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-hashtag" for="stuId"></i></span>
+                            <input type="text" onchange="getStu()" name="stuId" id="stuId" placeholder="Enter Roll-No" required />
+                        </div>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                            <input type="text" id="stuName" placeholder="Enter Full Name" name="stuName" />
+                        </div>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-graduation-cap"></i></span>
+                            <input type="text" id="stuClass"placeholder="Enter Class" name="stuClass" />
+                        </div>
+                        <div class="input_field"> 
+                            <input class="form-control" type="date" id="stuDOB" placeholder="Enter Birth-Date" name="stuDOB"/>
+                        </div>
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-wpforms"></i></span>
+                            <input type="text" id="stuAddress" placeholder="Enter Address" name="stuAddress" />
+                        </div>
+                        <div class="input_field">
+                            <input class="form-control" type="date" id="stuEnrollDate" placeholder="Enter Enrollment-Date" name="stuEnrollDate" />
+                        </div>
+                        <div class="btns">
+                        <input type="button" class="btn btn-primary" id="empSave" value="Save" onclick="saveData();" />
+                        <input type="button" class="btn btn-primary" id="empChange" value="Change" onclick="changeData();" />
+                        <input type="button" class="btn btn-primary" id="empReset" value="Reset" onClick="resetForm()" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+      <h2>Student Enrollment Form (Micro Project Work)</h2>
+      <form id="stuForm" method="post">
+        <div class="form-group">
+          <span
+            ><label for="stuId">Roll-No:</label> <label id="stuIdMsg"> </label
+          ></span>
+
+          <input
+            type="text"
+            class="form-control"
+            onchange="getStu()"
+            name="stuId"
+            id="stuId"
+            placeholder="Enter Roll-No"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="stuName">Student Full Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="stuName"
+            placeholder="Enter Full Name"
+            name="stuName"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="stuClass">Class:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="stuClass"
+            placeholder="Enter Class"
+            name="stuClass"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="stuDOB">Birth-Date:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="stuDOB"
+            placeholder="Enter Birth-Date"
+            name="stuDOB"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="stuAddress">Address:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="stuAddress"
+            placeholder="Enter Address"
+            name="stuAddress"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="stuEnrollDate">Enrollment-Date:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="stuEnrollDate"
+            placeholder="Enter Enrollment-Date"
+            name="stuEnrollDate"
+          />
+        </div>
+
+        <input
+          type="button"
+          class="btn btn-primary"
+          id="empSave"
+          value="Save"
+          onclick="saveData();"
+        />
+        <input
+          type="button"
+          class="btn btn-primary"
+          id="empChange"
+          value="Change"
+          onclick="changeData();"
+        />
+        <input
+          type="button"
+          class="btn btn-primary"
+          id="empReset"
+          value="Reset"
+          onClick="resetForm()"
+        />
+      </form>
+    </div> -->
+    <script src="./jpdbconn.js">
+    </script>
+  </body>
+</html>
